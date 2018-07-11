@@ -1,0 +1,29 @@
+* {
+	background-color: #c7ecee;
+	box-sizing: border-box;
+	font-family: 'Muli', sans-serif;
+	margin: 0;
+}
+
+.app {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.contactEmail {
+	text-decoration: none;
+}
+
+form {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+input, button {
+	background-color: #dff9fb;
+	border-radius: 10px;
+	color: #130f40;
+	font-family: 'Inconsolata', monospace;
+	font-weight: bold;
+}
+
