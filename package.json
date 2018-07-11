@@ -1,0 +1,12 @@
+{
+  "name": "14.5-react-app-contact-list",
+  "version": "1.0.0",
+  "description": "React- app with contact list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore"
+  },
+  "author": "",
+  "license": "ISC"
+}
