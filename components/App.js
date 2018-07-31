@@ -26,10 +26,37 @@ var contactForm = {
 };
 
 var App = React.createClass({
+
+	getInitialState: function() {
+		return {
+			contacts: contacts,
+			contact: contactForm
+		};
+	},
+
+	addContact: function({firstName, lastName, email}) {
+		var newContact = {
+			id: this.state.contacts.length + 1,
+			firstName: firstName,
+			lastName: lastName,
+			email: email
+		};
+
+		this.setState(previousList => ({
+			newContact: previousList.contacts.push(newContact),
+			firstName: '',
+			lastName: '',
+			email: ''
+		}));
+	},
+
 	render: function() {
 		return (
 			React.createElement('div', {className: 'app'},
-				React.createElement(ContactForm, {contact: contactForm}),
+				React.createElement(ContactForm, {
+					contact: contactForm,
+					addContact: this.addContact,
+				}),
 				React.createElement(Contacts, {items: contacts}, {})
 				)
 			);
