@@ -111,7 +111,9 @@ var App = React.createClass({
 		this.setState((prevState) => {
 			console.log(newContact);
 			console.log(prevState.contacts);
+			console.log(contacts: prevState.contacts.push(newContact));
 			contacts: prevState.contacts + newContact;
+			// contacts: prevState.contacts.push(newContact);
 		});
 	},
 
