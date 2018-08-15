@@ -109,14 +109,11 @@ var App = React.createClass({
 		};
 
 		this.setState((prevState) => {
-			return {contacts: prevState.contacts + newContact};
+			console.log(newContact);
+			console.log(prevState.contacts);
+			contacts: prevState.contacts + newContact;
+			// contacts: prevState.contacts.push(newContact);
 		});
-		console.log(contacts);
-		// console.log(...prevState.contacts);
-			// newContact: newContact,
-			// firstName: '',
-			// lastName: '',
-			// email: ''
 	},
 
 	render: function() {
